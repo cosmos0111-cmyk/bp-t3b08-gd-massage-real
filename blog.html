@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="공덕 마사지 내돈내산 찐후기. 공덕역 근처에서 진짜 실력 있는 마사지샵을 찾는다면? 3년 차 직장인이 직접 경험한 공덕 마사지 추천과 솔직 리뷰를 확인하세요.">
+    <meta name="keywords" content="공덕 마사지, 공덕 마사지 내돈내산, 공덕역 마사지, 공덕 마사지 추천, 마사지, 내돈내산 후기">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <meta property="og:title" content="공덕 마사지 내돈내산 | 진짜 후기와 찐 추천">
+    <meta property="og:description" content="공덕역에서 진짜 실력 있는 마사지샵을 찾는다면? 내돈내산 후기로 증명하는 공덕 마사지 추천 리스트.">
+    <meta property="og:url" content="https://t3b08-gd-massage-real.vercel.app">
+    <meta property="og:type" content="website">
+    <title>공덕 마사지 내돈내산 | 블로그</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #0a0a0a;
+            color: #e5e5e5;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        a {
+            color: #d4a853;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #f0d68a;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            padding: 32px 0 16px;
+            border-bottom: 1px solid #222;
+            text-align: center;
+        }
+        .site-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #d4a853;
+            text-transform: uppercase;
+        }
+        .site-sub {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 4px;
+        }
+        nav {
+            padding: 16px 0;
+            border-bottom: 1px solid #222;
+        }
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            list-style: none;
+        }
+        .nav-list a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #ccc;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        .nav-list a:hover {
+            color: #d4a853;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            width: 30px;
+        }
+        .hamburger span {
+            display: block;
+            height: 2px;
+            background: #d4a853;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .mobile-nav {
+            display: none;
+            flex-direction: column;
+            background: #111;
+            padding: 16px;
+            gap: 12px;
+            border-bottom: 1px solid #222;
+        }
+        .mobile-nav a {
+            color: #ccc;
+            font-size: 0.95rem;
+            padding: 6px 0;
+        }
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+                margin: 0 auto;
+            }
+            .mobile-nav.active {
+                display: flex;
+            }
+            header {
+                padding: 24px 0 12px;
+            }
+            .site-title {
+                font-size: 1.3rem;
+            }
+            .container {
+                padding: 0 16px;
+            }
+        }
+        .hero-post {
+            padding: 48px 0 32px;
+        }
+        .hero-post h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #f5f0e8;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+        .hero-post .meta {
+            display: flex;
+            gap: 16px;
+            color: #777;
+            font-size: 0.85rem;
+            margin-bottom: 32px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 16px;
+        }
+        .hero-post .featured-img {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(145deg, #1a1a1a 0%, #2a241c 100%);
+            border-radius: 12px;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d4a853;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            border: 1px solid #333;
+        }
+        .hero-post .content {
+            font-size: 1.05rem;
+            color: #d0cfcf;
+        }
+        .hero-post .content p {
+            margin-bottom: 24px;
+        }
+        .hero-post .content h2 {
+            font-size: 1.5rem;
+            color: #f0e6d0;
+            margin: 36px 0 16px;
+            border-left: 4px solid #d4a853;
+            padding-left: 16px;
+        }
+        .hero-post .content h3 {
+            font-size: 1.2rem;
+            color: #e0d5c5;
+            margin: 28px 0 12px;
+        }
+        .hero-post .content blockquote {
+            border-left: 4px solid #d4a853;
+            background: #151515;
+            padding: 16px 24px;
+            margin: 24px 0;
+            font-style: italic;
+            color: #bbb;
+            border-radius: 0 8px 8px 0;
+        }
+        .hero-post .content ul {
+            margin: 16px 0 24px 24px;
+            list-style: disc;
+            color: #ccc;
+        }
+        .hero-post .content ul li {
+            margin-bottom: 8px;
+        }
+        .hero-post .content .highlight-box {
+            background: #121212;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 28px 0;
+        }
+        .hero-post .content .highlight-box p {
+            margin-bottom: 8px;
+        }
+        .hero-post .content .highlight-box strong {
+            color: #d4a853;
+        }
+        @media (max-width: 768px) {
+            .hero-post h1 {
+                font-size: 1.6rem;
+            }
+            .hero-post .featured-img {
+                height: 220px;
+            }
+        }
+        .faq-section {
+            padding: 40px 0 60px;
+            border-top: 1px solid #222;
+            margin-top: 16px;
+        }
+        .faq-section h2 {
+            font-size: 1.6rem;
+            color: #f0e6d0;
+            margin-bottom: 28px;
+            text-align: center;
+        }
+        .faq-item {
+            border-bottom: 1px solid #2a2a2a;
+            padding: 18px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #d4a853;
+            margin-bottom: 8px;
+            cursor: default;
+        }
+        .faq-answer {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .faq-section h2 {
+                font-size: 1.3rem;
+            }
+        }
+        footer {
+            border-top: 1px solid #222;
+            padding: 32px 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.8rem;
+        }
+        footer a {
+            color: #d4a853;
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="site-title">공덕 마사지 내돈내산</div>
+            <div class="site-sub">진짜 후기와 찐 추천</div>
+        </header>
+
+        <nav>
+            <div class="hamburger" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/">홈</a></li>
+                <li><a href="/blog">블로그</a></li>
+                <li><a href="/about">소개</a></li>
+                <li><a href="tel:010-1234-5678">전화문의</a></li>
+            </ul>
+            <div class="mobile-nav" id="mobileNav">
+                <a href="/">홈</a>
+                <a href="/blog">블로그</a>
+                <a href="/about">소개</a>
+                <a href="tel:010-1234-5678">전화문의</a>
+            </div>
+        </nav>
+
+        <main>
+            <article class="hero-post">
+                <h1>공덕 마사지 내돈내산 찐후기: 직장인이 직접 가본 TOP3</h1>
+                <div class="meta">
+                    <span>📅 2025.03.21</span>
+                    <span>✍️ by 브로</span>
+                    <span>🏷️ 공덕 마사지 · 내돈내산</span>
+                </div>
+                <div class="featured-img">📸 공덕역 마사지샵 내부 분위기</div>
+                <div class="content">
+                    <p>야, 나 공덕에서 3년째 직장 생활하는데 진짜 마사지 많이 다녀봤어. 회사 스트레스에 목 어깨는 거의 돌덩이 수준이더라고. 그래서 내 돈 내고 직접 경험한 공덕 마사지샵들 중에서 진짜 괜찮았던 곳만 추려봤다. 허위 광고나 협찬 같은 거 전혀 없음. 내돈내산 찐후기니까 믿어도 돼.</p>
+
+                    <p>처음엔 그냥 아무 데나 갔다가 돈만 날린 적도 많았어. 어떤 곳은 테라피스트가 솔직히 실력이 별로였고, 어떤 곳은 너무 비싸서 부담됐거든. 그래서 이번엔 내 기준에서 '진짜 가성비 좋고 효과 본' 곳만 골라서 정리해봤다. 공덕역 근처에서 일하는 직장인들한테 특히 도움될 거야.</p>
+
+                    <h2>1. 공덕 마사지 1순위: '테라피스'</h2>
+                    <p>공덕역 4번 출구에서 도보 3분 거리야. 처음 갔을 때 인테리어부터 분위기가 확 달랐어. 어두운 조명에 편안한 향기, 그리고 가장 중요한 건 손님을 대하는 태도. 테라피스트 분이 시술 전에 꼼꼼하게 상담해주고, 아픈 부위를 집중적으로 풀어줬다. 90분 코스 받았는데, 끝나고 나니까 몸이 확 가벼워지는 느낌이었어. 가격도 9만 원대로 합리적이었고.</p>
+
+                    <blockquote>"진짜 3년 동안 공덕에서 마사지 여러 군데 다녀봤는데, 여기만 한 데는 아직 못 찾았어. 목과 어깨가 특히 좋아졌다." — 내돈내산 후기 중</blockquote>
+
+                    <p>단점을 꼽자면 예약이 꽉 차 있는 경우가 많다는 거. 나도 두 번 정도는 당일에 전화했다가 예약이 안 돼서 다른 날로 미뤘거든. 그래도 그만한 가치가 있는 곳이니까 미리 예약하고 가는 걸 추천한다.</p>
+
+                    <h2>2. 가성비 갑: '힐링 공덕'</h2>
+                    <p>여기는 직장인들한테 진짜 인기 많아. 점심시간에 가면 회사원들로 북적북적하더라고. 60분 코스가 6만 원대라서 부담 없이 갈 수 있어. 시술 자체는 기본에 충실한 느낌이야. 화려하진 않지만 꾹꾹 눌러주는 맛이 있어. 피로 회복용으로 자주 가기 좋은 곳이지.</p>
+
+                    <p>다만 개인적인 취향으로는 좀 더 섬세한 케어를 원한다면 아쉬울 수도 있어. 그래도 이 가격에 이 정도 퀄리티면 나는 만족했어. 공덕역 2번 출구에서 바로 보이는 건물 3층에 있어서 찾기도 엄청 쉽다.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>💡 내돈내산 꿀팁</strong></p>
+                        <p>힐링 공덕은 평일 오전에 가면 한산해서 더 편하게 받을 수 있어. 점심시간 이후에는 항상 웨이팅이 있더라고.</p>
+                    </div>
+
+                    <h2>3. 특별한 날: '더 마사지 룸'</h2>
+                    <p>여기는 좀 특별해. 공덕역 6번 출구에서 5분 정도 걸어가야 하는데, 건물 자체가 조용한 골목에 있어서 힐링하기 좋은 분위기야. 실내는 정말 럭셔리하게 꾸며놨더라고. 가격대는 조금 있는 편인데 120분 코스가 15만 원 정도. 하지만 그만큼 서비스가 좋아. 테라피스트 분이 하나하나 꼼꼼하게 설명해주고, 시술 후엔 차도 줘.</p>
+
+                    <p>나는 생일이나 시험 끝나고 기념일 같은 날 가는 편이야. 평소에 자주 가기엔 부담되지만, 가끔 나를 위해 투자한다는 생각으로 가면 정말 만족도가 높아. 여긴 특히 전신 마사지가 진짜 좋아. 발 끝부터 정수리까지 시원하게 풀어준다.</p>
+
+                    <p>세 군데 모두 내가 직접 돈 내고 경험한 곳들이야. 공덕 마사지 고민한다면 이 중에서 취향에 맞는 곳을 골라봐. 나는 개인적으로 첫 번째인 테라피스를 가장 추천하는데, 이유는 진짜 효과를 봤기 때문이야. 여러분도 꼭 한 번 가보길 바란다.</p>
+
+                    <p>혹시 더 궁금한 거 있으면 댓글로 물어봐. 아는 건 다 알려줄게. 다음엔 공덕 마사지 다른 곳도 가보고 후기 남길게. 안녕!</p>
+                </div>
+            </article>
+
+            <section class="faq-section">
+                <h2>공덕 마사지 자주 묻는 질문</h2>
+                <div class="faq-item">
+                    <div class="faq-question">Q. 공덕역에서 가장 가까운 마사지샵은 어디인가요?</div>
+                    <div class="faq-answer">공덕역 2번 출구 바로 앞에 있는 '힐링 공덕'이 가장 가까워요. 도보 1분도 안 걸려서 점심시간에 가기 좋아요.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q. 내돈내산 후기만 보고 갔는데 실망할까요?</div>
+                    <div class="faq-answer">내가 직접 세 군데 다 가봤고, 모두 솔직하게 작성한 후기예요. 개인차는 있을 수 있지만, 최소한 가성비나 효과 면에서 나쁘지 않을 거예요.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q. 예
+</body>
+</html>
