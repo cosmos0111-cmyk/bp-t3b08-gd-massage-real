@@ -1,329 +1,327 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="공덕 마사지 내돈내산 찐후기. 공덕역 근처에서 진짜 실력 있는 마사지샵을 찾는다면? 3년 차 직장인이 직접 경험한 공덕 마사지 추천과 솔직 리뷰를 확인하세요.">
-    <meta name="keywords" content="공덕 마사지, 공덕 마사지 내돈내산, 공덕역 마사지, 공덕 마사지 추천, 마사지, 내돈내산 후기">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <meta property="og:title" content="공덕 마사지 내돈내산 | 블로그">
-    <meta property="og:description" content="공덕 마사지 내돈내산 찐후기. 공덕역 근처에서 진짜 실력 있는 마사지샵을 찾는다면? 3년 차 직장인이 직접 경험한 공덕 마사지 추천과 솔직 리뷰를 확인하세요.">
-    <meta property="og:url" content="https://gongdeok-body-review.namanavi.com/blog.html">
-    <meta property="og:type" content="website">
-    <title>공덕 마사지 내돈내산 | 블로그</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #0a0a0a;
-            color: #e5e5e5;
-            line-height: 1.7;
-            min-height: 100vh;
-        }
-        a {
-            color: #d4a853;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #f0d68a;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        header {
-            padding: 32px 0 16px;
-            border-bottom: 1px solid #222;
-            text-align: center;
-        }
-        .site-title {
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: #d4a853;
-            text-transform: uppercase;
-        }
-        .site-sub {
-            font-size: 0.85rem;
-            color: #888;
-            margin-top: 4px;
-        }
-        nav {
-            padding: 16px 0;
-            border-bottom: 1px solid #222;
-        }
-        .nav-list {
-            display: flex;
-            justify-content: center;
-            gap: 36px;
-            list-style: none;
-        }
-        .nav-list a {
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #ccc;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            transition: color 0.3s;
-        }
-        .nav-list a:hover {
-            color: #d4a853;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-            width: 30px;
-        }
-        .hamburger span {
-            display: block;
-            height: 2px;
-            background: #d4a853;
-            border-radius: 2px;
-            transition: 0.3s;
-        }
-        .mobile-nav {
-            display: none;
-            flex-direction: column;
-            background: #111;
-            padding: 16px;
-            gap: 12px;
-            border-bottom: 1px solid #222;
-        }
-        .mobile-nav a {
-            color: #ccc;
-            font-size: 0.95rem;
-            padding: 6px 0;
-        }
-        @media (max-width: 768px) {
-            .nav-list {
-                display: none;
-            }
-            .hamburger {
-                display: flex;
-                margin: 0 auto;
-            }
-            .mobile-nav.active {
-                display: flex;
-            }
-            header {
-                padding: 24px 0 12px;
-            }
-            .site-title {
-                font-size: 1.3rem;
-            }
-            .container {
-                padding: 0 16px;
-            }
-        }
-        .hero-post {
-            padding: 48px 0 32px;
-        }
-        .hero-post h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #f5f0e8;
-            line-height: 1.3;
-            margin-bottom: 20px;
-            letter-spacing: -0.5px;
-        }
-        .hero-post .meta {
-            display: flex;
-            gap: 16px;
-            color: #777;
-            font-size: 0.85rem;
-            margin-bottom: 32px;
-            border-bottom: 1px solid #222;
-            padding-bottom: 16px;
-        }
-        .hero-post .featured-img {
-            width: 100%;
-            height: 400px;
-            background: linear-gradient(145deg, #1a1a1a 0%, #2a241c 100%);
-            border-radius: 12px;
-            margin-bottom: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #d4a853;
-            font-size: 1rem;
-            letter-spacing: 2px;
-            border: 1px solid #333;
-        }
-        .hero-post .content {
-            font-size: 1.05rem;
-            color: #d0cfcf;
-        }
-        .hero-post .content p {
-            margin-bottom: 24px;
-        }
-        .hero-post .content h2 {
-            font-size: 1.5rem;
-            color: #f0e6d0;
-            margin: 36px 0 16px;
-            border-left: 4px solid #d4a853;
-            padding-left: 16px;
-        }
-        .hero-post .content h3 {
-            font-size: 1.2rem;
-            color: #e0d5c5;
-            margin: 28px 0 12px;
-        }
-        .hero-post .content blockquote {
-            border-left: 4px solid #d4a853;
-            background: #151515;
-            padding: 16px 24px;
-            margin: 24px 0;
-            font-style: italic;
-            color: #bbb;
-            border-radius: 0 8px 8px 0;
-        }
-        .hero-post .content ul {
-            margin: 16px 0 24px 24px;
-            list-style: disc;
-            color: #ccc;
-        }
-        .hero-post .content ul li {
-            margin-bottom: 8px;
-        }
-        .hero-post .content .highlight-box {
-            background: #121212;
-            border: 1px solid #333;
-            border-radius: 12px;
-            padding: 24px;
-            margin: 28px 0;
-        }
-        .hero-post .content .highlight-box p {
-            margin-bottom: 8px;
-        }
-        .hero-post .content .highlight-box strong {
-            color: #d4a853;
-        }
-        @media (max-width: 768px) {
-            .hero-post h1 {
-                font-size: 1.6rem;
-            }
-            .hero-post .featured-img {
-                height: 220px;
-            }
-        }
-        .faq-section {
-            padding: 40px 0 60px;
-            border-top: 1px solid #222;
-            margin-top: 16px;
-        }
-        .faq-section h2 {
-            font-size: 1.6rem;
-            color: #f0e6d0;
-            margin-bottom: 28px;
-            text-align: center;
-        }
-        .faq-item {
-            border-bottom: 1px solid #2a2a2a;
-            padding: 18px 0;
-        }
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-        .faq-question {
-            font-weight: 600;
-            font-size: 1.05rem;
-            color: #d4a853;
-            margin-bottom: 8px;
-            cursor: default;
-        }
-        .faq-answer {
-            color: #b0b0b0;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        @media (max-width: 768px) {
-            .faq-section h2 {
-                font-size: 1.3rem;
-            }
-        }
-        footer {
-            border-top: 1px solid #222;
-            padding: 32px 0;
-            text-align: center;
-            color: #666;
-            font-size: 0.8rem;
-        }
-        footer a {
-            color: #d4a853;
-        }
-    </style>
-  <link rel="canonical" href="https://gongdeok-body-review.namanavi.com/blog.html">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="공덕 마사지 내돈내산 찐후기. 공덕역 근처에서 진짜 실력 있는 마사지샵을 찾는다면? 3년 차 직장인이 직접 경험한 공덕 마사지 추천과 솔직 리뷰를 확인하세요.">
+ <meta name="keywords" content="공덕 마사지, 공덕 마사지 내돈내산, 공덕역 마사지, 공덕 마사지 추천, 마사지, 내돈내산 후기">
+ <meta property="og:title" content="공덕 마사지 내돈내산 | 블로그">
+ <meta property="og:description" content="공덕 마사지 내돈내산 찐후기. 공덕역 근처에서 진짜 실력 있는 마사지샵을 찾는다면? 3년 차 직장인이 직접 경험한 공덕 마사지 추천과 솔직 리뷰를 확인하세요.">
+ <meta property="og:url" content="https://gongdeok-body-review.namanavi.com/blog.html">
+ <meta property="og:type" content="website">
+ <title>공덕 마사지 내돈내산 | 블로그</title>
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+ background: #0a0a0a;
+ color: #e5e5e5;
+ line-height: 1.7;
+ min-height: 100vh;
+ }
+ a {
+ color: #d4a853;
+ text-decoration: none;
+ transition: color 0.3s ease;
+ }
+ a:hover {
+ color: #f0d68a;
+ }
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ header {
+ padding: 32px 0 16px;
+ border-bottom: 1px solid #222;
+ text-align: center;
+ }
+ .site-title {
+ font-size: 1.6rem;
+ font-weight: 700;
+ letter-spacing: 2px;
+ color: #d4a853;
+ text-transform: uppercase;
+ }
+ .site-sub {
+ font-size: 0.85rem;
+ color: #888;
+ margin-top: 4px;
+ }
+ nav {
+ padding: 16px 0;
+ border-bottom: 1px solid #222;
+ }
+ .nav-list {
+ display: flex;
+ justify-content: center;
+ gap: 36px;
+ list-style: none;
+ }
+ .nav-list a {
+ font-size: 0.9rem;
+ font-weight: 500;
+ color: #ccc;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ transition: color 0.3s;
+ }
+ .nav-list a:hover {
+ color: #d4a853;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ width: 30px;
+ }
+ .hamburger span {
+ display: block;
+ height: 2px;
+ background: #d4a853;
+ border-radius: 2px;
+ transition: 0.3s;
+ }
+ .mobile-nav {
+ display: none;
+ flex-direction: column;
+ background: #111;
+ padding: 16px;
+ gap: 12px;
+ border-bottom: 1px solid #222;
+ }
+ .mobile-nav a {
+ color: #ccc;
+ font-size: 0.95rem;
+ padding: 6px 0;
+ }
+ @media (max-width: 768px) {
+ .nav-list {
+ display: none;
+ }
+ .hamburger {
+ display: flex;
+ margin: 0 auto;
+ }
+ .mobile-nav.active {
+ display: flex;
+ }
+ header {
+ padding: 24px 0 12px;
+ }
+ .site-title {
+ font-size: 1.3rem;
+ }
+ .container {
+ padding: 0 16px;
+ }
+ }
+ .hero-post {
+ padding: 48px 0 32px;
+ }
+ .hero-post h1 {
+ font-size: 2.2rem;
+ font-weight: 700;
+ color: #f5f0e8;
+ line-height: 1.3;
+ margin-bottom: 20px;
+ letter-spacing: -0.5px;
+ }
+ .hero-post .meta {
+ display: flex;
+ gap: 16px;
+ color: #777;
+ font-size: 0.85rem;
+ margin-bottom: 32px;
+ border-bottom: 1px solid #222;
+ padding-bottom: 16px;
+ }
+ .hero-post .featured-img {
+ width: 100%;
+ height: 400px;
+ background: linear-gradient(145deg, #1a1a1a 0%, #2a241c 100%);
+ border-radius: 12px;
+ margin-bottom: 32px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #d4a853;
+ font-size: 1rem;
+ letter-spacing: 2px;
+ border: 1px solid #333;
+ }
+ .hero-post .content {
+ font-size: 1.05rem;
+ color: #d0cfcf;
+ }
+ .hero-post .content p {
+ margin-bottom: 24px;
+ }
+ .hero-post .content h2 {
+ font-size: 1.5rem;
+ color: #f0e6d0;
+ margin: 36px 0 16px;
+ border-left: 4px solid #d4a853;
+ padding-left: 16px;
+ }
+ .hero-post .content h3 {
+ font-size: 1.2rem;
+ color: #e0d5c5;
+ margin: 28px 0 12px;
+ }
+ .hero-post .content blockquote {
+ border-left: 4px solid #d4a853;
+ background: #151515;
+ padding: 16px 24px;
+ margin: 24px 0;
+ font-style: italic;
+ color: #bbb;
+ border-radius: 0 8px 8px 0;
+ }
+ .hero-post .content ul {
+ margin: 16px 0 24px 24px;
+ list-style: disc;
+ color: #ccc;
+ }
+ .hero-post .content ul li {
+ margin-bottom: 8px;
+ }
+ .hero-post .content .highlight-box {
+ background: #121212;
+ border: 1px solid #333;
+ border-radius: 12px;
+ padding: 24px;
+ margin: 28px 0;
+ }
+ .hero-post .content .highlight-box p {
+ margin-bottom: 8px;
+ }
+ .hero-post .content .highlight-box strong {
+ color: #d4a853;
+ }
+ @media (max-width: 768px) {
+ .hero-post h1 {
+ font-size: 1.6rem;
+ }
+ .hero-post .featured-img {
+ height: 220px;
+ }
+ }
+ .faq-section {
+ padding: 40px 0 60px;
+ border-top: 1px solid #222;
+ margin-top: 16px;
+ }
+ .faq-section h2 {
+ font-size: 1.6rem;
+ color: #f0e6d0;
+ margin-bottom: 28px;
+ text-align: center;
+ }
+ .faq-item {
+ border-bottom: 1px solid #2a2a2a;
+ padding: 18px 0;
+ }
+ .faq-item:last-child {
+ border-bottom: none;
+ }
+ .faq-question {
+ font-weight: 600;
+ font-size: 1.05rem;
+ color: #d4a853;
+ margin-bottom: 8px;
+ cursor: default;
+ }
+ .faq-answer {
+ color: #b0b0b0;
+ font-size: 0.95rem;
+ line-height: 1.6;
+ }
+ @media (max-width: 768px) {
+ .faq-section h2 {
+ font-size: 1.3rem;
+ }
+ }
+ footer {
+ border-top: 1px solid #222;
+ padding: 32px 0;
+ text-align: center;
+ color: #666;
+ font-size: 0.8rem;
+ }
+ footer a {
+ color: #d4a853;
+ }
+ </style>
+ <link rel="canonical" href="https://gongdeok-body-review.namanavi.com/blog.html">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="site-title">공덕 마사지 내돈내산</div>
-            <div class="site-sub">진짜 후기와 찐 추천</div>
-        </header>
+ <div class="container">
+ <header>
+ <div class="site-title">공덕 마사지 내돈내산</div>
+ <div class="site-sub">진짜 후기와 찐 추천</div>
+ </header>
 
 <main>
-            <article class="hero-post">
-                <h1>공덕 마사지, 예약 전 알아두면 좋은 것들</h1>
-                <div class="meta">
-                    <span>공덕 · 마사지</span>
-                    <span>이용 가이드</span>
-                </div>
-                <div class="featured-img">공덕 마사지 이용 안내</div>
-                <div class="content">
-                    <p>공덕역 인근에서 마사지 이용을 고려하고 있다면, 예약 절차와 비용이 정해지는 방식을 먼저 파악해두는 것이 도움이 된다. 아래 내용은 일반적인 이용 흐름을 정리한 것이다.</p>
+ <article class="hero-post">
+ <h1>공덕 마사지, 예약 전 알아두면 좋은 것들</h1>
+ <div class="meta">
+ <span>공덕 · 마사지</span>
+ <span>이용 가이드</span>
+ </div>
+ <div class="featured-img">공덕 마사지 이용 안내</div>
+ <div class="content">
+ <p>공덕역 인근에서 마사지 이용을 고려하고 있다면, 예약 절차와 비용이 정해지는 방식을 먼저 파악해두는 것이 도움이 된다. 아래 내용은 일반적인 이용 흐름을 정리한 것이다.</p>
 
-                    <h2>문의부터 방문까지</h2>
-                    <p>대부분의 경우 전화 문의로 이용 절차가 시작된다. 희망하는 날짜와 시간대, 인원을 전달하면 이용 가능 여부와 대략적인 진행 방식을 안내받을 수 있다. 확정된 내용은 방문 전 다시 확인하는 것이 일반적이다.</p>
+ <h2>문의부터 방문까지</h2>
+ <p>대부분의 경우 전화 문의로 이용 절차가 시작된다. 희망하는 날짜와 시간대, 인원을 전달하면 이용 가능 여부와 대략적인 진행 방식을 안내받을 수 있다. 확정된 내용은 방문 전 다시 확인하는 것이 일반적이다.</p>
 
-                    <div class="highlight-box">
-                        <p><strong>참고</strong></p>
-                        <p>시간대에 따라 예약 가능 여부가 달라질 수 있으므로, 원하는 시간이 있다면 미리 문의하는 것이 좋다.</p>
-                    </div>
+ <div class="highlight-box">
+ <p><strong>참고</strong></p>
+ <p>시간대에 따라 예약 가능 여부가 달라질 수 있으므로, 원하는 시간이 있다면 미리 문의하는 것이 좋다.</p>
+ </div>
 
-                    <h2>비용에 영향을 주는 요소</h2>
-                    <p>비용은 선택하는 관리 구성과 이용 시간, 방문 시간대에 따라 달라진다. 고정된 단일 금액이 아니라 조건에 따라 범위가 달라지는 구조이므로, 정확한 금액은 문의를 통해 확인하는 것이 정확하다.</p>
+ <h2>비용에 영향을 주는 요소</h2>
+ <p>비용은 선택하는 관리 구성과 이용 시간, 방문 시간대에 따라 달라진다. 고정된 단일 금액이 아니라 조건에 따라 범위가 달라지는 구조이므로, 정확한 금액은 문의를 통해 확인하는 것이 정확하다.</p>
 
-                    <h2>공덕 지역 이용 시 참고할 점</h2>
-                    <p>공덕역은 여러 노선이 지나는 환승역으로 접근성이 좋은 편으로 알려진 지역이다. 다만 건물에 따라 주차 여건이 다를 수 있어, 자차로 이동하는 경우 사전에 확인해두는 것이 좋다.</p>
-                    <ul>
-                        <li>희망 날짜와 시간대를 미리 정해둔다.</li>
-                        <li>원하는 관리 구성을 문의 시 구체적으로 전달한다.</li>
-                        <li>주차 및 이동 경로를 사전에 확인한다.</li>
-                    </ul>
+ <h2>공덕 지역 이용 시 참고할 점</h2>
+ <p>공덕역은 여러 노선이 지나는 환승역으로 접근성이 좋은 편으로 알려진 지역이다. 다만 건물에 따라 주차 여건이 다를 수 있어, 자차로 이동하는 경우 사전에 확인해두는 것이 좋다.</p>
+ <ul>
+ <li>희망 날짜와 시간대를 미리 정해둔다.</li>
+ <li>원하는 관리 구성을 문의 시 구체적으로 전달한다.</li>
+ <li>주차 및 이동 경로를 사전에 확인한다.</li>
+ </ul>
 
-                    <h2>자주 하는 실수</h2>
-                    <p>사전 문의 없이 방문하면 대기 시간이 길어질 수 있고, 원하는 관리 구성을 미리 전달하지 않으면 상담에 시간이 더 걸릴 수 있다. 주차 여건을 확인하지 않고 자차로 이동했다가 일정이 지연되는 경우도 흔하다. 이런 부분만 미리 챙겨도 이용 과정이 한결 매끄러워진다.</p>
+ <h2>자주 하는 실수</h2>
+ <p>사전 문의 없이 방문하면 대기 시간이 길어질 수 있고, 원하는 관리 구성을 미리 전달하지 않으면 상담에 시간이 더 걸릴 수 있다. 주차 여건을 확인하지 않고 자차로 이동했다가 일정이 지연되는 경우도 흔하다. 이런 부분만 미리 챙겨도 이용 과정이 한결 매끄러워진다.</p>
 
-                    <p>문의: 010-1234-5678</p>
-                </div>
-            </article>
+ 
+ </div>
+ </article>
 
-            <section class="faq-section">
-                <h2>많이 나오는 질문</h2>
-                <div class="faq-item">
-                    <div class="faq-question">Q. 당일 예약도 가능한가</div>
-                    <div class="faq-answer">상황에 따라 가능할 수 있으나, 시간대가 몰리는 경우 사전 문의가 필요할 수 있다.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Q. 이용 시간은 정해져 있는가</div>
-                    <div class="faq-answer">선택하는 구성에 따라 기본 시간이 달라지며, 연장 여부도 문의 시 확인할 수 있다.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Q. 혼자 방문해도 괜찮은가</div>
-                    <div class="faq-answer">1인 이용이 가능한 구성이 마련되어 있는 경우가 많아 문의 시 확인하면 된다.</div>
-                </div>
-            </section>
-    </main>
+ <section class="faq-section">
+ <h2>많이 나오는 질문</h2>
+ <div class="faq-item">
+ <div class="faq-question">Q. 당일 예약도 가능한가</div>
+ <div class="faq-answer">상황에 따라 가능할 수 있으나, 시간대가 몰리는 경우 사전 문의가 필요할 수 있다.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question">Q. 이용 시간은 정해져 있는가</div>
+ <div class="faq-answer">선택하는 구성에 따라 기본 시간이 달라지며, 연장 여부도 문의 시 확인할 수 있다.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question">Q. 혼자 방문해도 괜찮은가</div>
+ <div class="faq-answer">1인 이용이 가능한 구성이 마련되어 있는 경우가 많아 문의 시 확인하면 된다.</div>
+ </div>
+ </section>
+ </main>
 
 
 </body>
